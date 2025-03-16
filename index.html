@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N.O.V.A Todo Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>N.O.V.A Todo Planner</h1>
+    <input type="text" id="taskInput" placeholder="Add a new task...">
+    <select id="categorySelect">
+      <option value="General">General</option>
+      <option value="Tools">Tools</option>
+      <option value="Courses">Courses</option>
+      <option value="Knowledge">Knowledge</option>
+      <option value="Hardware">Hardware</option>
+    </select>
+    <button onclick="addTask()">Add Task</button>
+    <input type="text" id="searchInput" placeholder="Search tasks..." onkeyup="searchTasks()">
+    <div id="progressContainer"><div id="progressBar"></div></div>
+    <ul id="taskList"></ul>
+    <button onclick="toggleDarkMode()">Toggle Dark/Light Mode</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
